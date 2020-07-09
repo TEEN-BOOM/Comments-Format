@@ -2,10 +2,16 @@
 
 An informal format for comments.
 
+**example**
+```py
+# !TODO:inImplentation: [Make (_list_)Connection a (_deque_) and change (_meth_)pop to :meth:`popleft`]
+```
+
 ## Basic format
 
 All text of the comment is to be wrapped in square brackets `[]`,
 and must have a space after the comment token.
+restructured Text and some markdown can be used
 
 ### example (Comment token is `#` in python):
 ```py
@@ -48,3 +54,9 @@ this doesn't refer to the comment token or square bracket, etc.
 */
 ```
 *note: the asterisk between lines is not necessary it is used to show how to align the text*
+
+## Communicating Intent
+TODO, DESC (description), REASON can be used to specify the *type* of the comment, these *types* should strictly be typed in capital letters.
+The types are succeeded by a `::` double colon token followed by a space.
+
+### Example
