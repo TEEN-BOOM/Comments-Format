@@ -2,7 +2,7 @@
 
 An informal format for comments.
 
-**example**
+**example** (This is a bloated comment)
 ```py
 # !TODO:inImplentation: [Make (_list_)Connection a (_deque_) and change (_meth_)pop to :meth:`popleft`]
 ```
@@ -11,7 +11,6 @@ An informal format for comments.
 
 All text of the comment is to be wrapped in square brackets `[]`,
 and must have a space after the comment token.
-restructured Text and some markdown can be used
 
 ### example (Comment token is `#` in python):
 ```py
@@ -19,8 +18,7 @@ restructured Text and some markdown can be used
 ```
 
 ## Comment Syntax
-A basic comment with no intent(eg: permission, question, etc) shall end with a period and a square bracket "`.]`"
-A comment may use proper punctuation but is not bound to. 
+A comment may use proper punctuation but is not bound to. restructured Text and some markdown can be used.
 
 ### example (Comment token is `#` in python):
 ```py
@@ -56,7 +54,30 @@ this doesn't refer to the comment token or square bracket, etc.
 *note: the asterisk between lines is not necessary it is used to show how to align the text*
 
 ## Communicating Intent
-TODO, DESC (description), REASON can be used to specify the *type* of the comment, these *types* should strictly be typed in capital letters.
+TODO, DESC (description), REASON, REQ can be used to specify the *type* of the comment, these *types* should strictly be typed in capital letters.
 The types are succeeded by a `::` double colon token followed by a space.
+The Text shall be aligned accordingly.
+**Multiple intents** shall be seperated with `|` delimiter.
 
 ### Example
+```py
+# TODO:: [Implement the add function] | REASON:: [To refactor code]
+```
+```py
+# REASON:: [Earlier version was slower]
+```
+```py
+# DESC:: [Adds a list's element to another list's
+#         elments given len(list1) == len(list2)]
+```
+```py
+REQ:: [Can we use an deque instead?]
+```
+### Specifying Staus or Marking an Comment
+A comment can be marked by writing in lowercase between the two colon's. The marker's length shall be preferably 16 characters long.
+```py
+# TODO:low: [Implement Rudeness level attribute]
+```
+```py
+# REQ:accepted:TODO:medium: [Implement __enter__ and __exit__]
+```
