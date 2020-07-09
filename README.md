@@ -29,7 +29,7 @@ as it affects Readability
 
 ### Multiple Inline Comments
 All comment tokens should be in the same column, and text characters shall be aligned in the same column.
-
+You can End the previous line with a semicolon to comment the line below.
 ### example (Python)
 ```py
 class VeryGood:
@@ -97,11 +97,32 @@ Do not to type hint too much and use basic type hinting like so. Though it's bes
 # TODO:: [Add :meth:`foo` returning "FoO"]
 ```
 ### Importance and Permission
-Importance is signified by `!`
+Importance is signified by `!` the more exclamtion signs the more urgent.
 ```py
 # !!TODO:: [Patch ValueError on SOmethi...]
 ```
 Permission is signified by `?`
 ```py
 # ?TODO:granted: [Remove :func:`foo`]
+```
+### Custom Intents, signs(i.e `!` and `?`) and acronyms or Format
+You must specify custom intents, signs, and acronyms in a `comments.format` in the following manner, located in the the root.
+You may change the Url if you are using a custom format
+```
+Format = "INTENT:status: [Text]"
+Typing = ["_Type<SubType>_", "ReStructuredText"]
+AllowedText = ["utf-8", "ReStructuredText", "markdown"]
+IntentAcronyms = {
+    "FUT": "The future goals",
+    "ADD": "To ADD"
+}
+StatusAcronyms = {
+    "den": "denied",
+    "abn": "Idea abandoned for now"
+    "acc": "Accepted"
+}
+======================================================
+Comment Format used <https://github.com/TEEN-BOOM/Comments-Format/README.md>
+======================================================
+Any Notes regarding commenting.
 ```
