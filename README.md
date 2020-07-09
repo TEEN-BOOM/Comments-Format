@@ -120,13 +120,13 @@ Signs:
     "*" | important
 ==============================
 
-IntentAcronyms:
+Intent Acronyms:
 ==============================
     "FUT" | The future goals
     "ADD" | To ADD
 ==============================
 
-StatusAcronyms:
+Status Acronyms:
 ====================================
     "den" | denied
     "abn" | "dea abandoned for now
