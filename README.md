@@ -88,9 +88,11 @@ the type as it is in the language surrounded by single underscores. i.e `str` be
 Some of the types that can be used are `_func_`, `_var_`, `_list<str>_`(list of strings), `_func<func, list>_` (a function which takes the following parameters)
 It's best not to type hint too much and use basic type hinting like so.
 ```py
-# REQ:: [Add (_func<int>_)IntToString I do not know how to implement it]
+# REQ:: [Add _func<int>_(IntToString) I do not know how to implement it]
 .
 .
 .
-# TODO:: [Remove (VeryGood._attr_)foo] | REASON:: [It's BAR]
+# TODO:: [Remove VeryGood._attr_(foo)] | REASON:: [It's BAR]
+# TODO:: [Add VeryGood._meth_(bar) returning "bar"]
+# TODO:: [Add :meth:`foo` returning "FoO"]
 ```
