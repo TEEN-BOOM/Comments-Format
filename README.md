@@ -126,3 +126,4 @@ Comment Format used <https://github.com/TEEN-BOOM/Comments-Format/README.md>
 ======================================================
 Any Notes regarding commenting.
 ```
+*You may leave the last line blank if you dont have any notes*
