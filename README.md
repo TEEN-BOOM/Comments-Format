@@ -2,9 +2,9 @@
 
 An informal format for comments.
 
-**example** (This is a bloated comment)
+**example** (This is a bloated comment and is not uniform in type hinting)
 ```py
-# !TODO:inImplentation: [Make (_list_)Connection a (_deque_) and change (_meth_)pop to :meth:`popleft`]
+# !TODO:inImplentation: [Make _list_(Connection) a _deque_ and change _meth_(pop) to :meth:`popleft`]
 ```
 
 ## Basic format
