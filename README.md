@@ -110,22 +110,22 @@ You must specify custom intents, signs, and acronyms in a `comments.format` in t
 You may change the Url if you are using a custom format
 ```
 ==============================
-Format      | "INTENT:status: [Text]"
+Format      | INTENT:status: [Text]
 Typing      | "_Type<SubType>_" & ReStructuredText
 AllowedText | "utf-8" & ReStructuredText & markdown
 ==============================
 
 IntentAcronyms:
 ==============================
-    "FUT" | "The future goals"
-    "ADD" | "To ADD"
+    "FUT" | The future goals
+    "ADD" | To ADD
 ==============================
 
 StatusAcronyms:
 ====================================
-    "den" | "denied",
-    "abn" | "Idea abandoned for now"
-    "acc" | "Accepted"
+    "den" | denied
+    "abn" | "dea abandoned for now
+    "acc" | Accepted
 ========================================
  = Comment Format used <https://github.com/TEEN-BOOM/Comments-Format/README.md>
 ========================================
