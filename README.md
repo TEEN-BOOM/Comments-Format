@@ -19,6 +19,8 @@ and must have a space after the comment token.
 
 ## Comment Syntax
 A comment may use proper punctuation but is not bound to. restructured Text and some markdown can be used.
+There may not be another square bracket in the commment, but you shall include it if unavoidable(think names, language syntax like subscripting)
+as it affects Readability
 
 ### example (Comment token is `#` in python):
 ```py
@@ -71,13 +73,24 @@ The Text shall be aligned accordingly.
 #         elments given len(list1) == len(list2)]
 ```
 ```py
-REQ:: [Can we use an deque instead?]
+# REQ:: [Can we use an deque instead?]
 ```
 ### Specifying Staus or Marking an Comment
-A comment can be marked by writing in lowercase between the two colon's. The marker's length shall be preferably 16 characters long.
+A comment can be marked by writing in lowercase between the two colon's. The marker's length shall be preferably less than 16 characters long.
 ```py
 # TODO:low: [Implement Rudeness level attribute]
 ```
 ```py
 # REQ:accepted:TODO:medium: [Implement __enter__ and __exit__]
+```
+### Type hinting in comments
+the type as it is in the language surrounded by single underscores. i.e `str` becomes `_str_` & `null` -> `_null_`.
+Some of the types that can be used are `_func_`, `_var_`, `_list<str>_`(list of strings), `_func<func, list>_` (a function which takes the following parameters)
+It's best not to type hint too much and use basic type hinting like so.
+```py
+# REQ:: [Add (_func<int>_)IntToString I do not know how to implement it]
+.
+.
+.
+# TODO:: [Remove (VeryGood._attr_)foo] | REASON:: [It's BAR]
 ```
