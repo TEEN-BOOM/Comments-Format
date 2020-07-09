@@ -20,7 +20,10 @@ and must have a space after the comment token.
 ## Comment Syntax
 A comment may use proper punctuation but is not bound to. restructured Text and some markdown can be used.
 There may not be another square bracket in the commment, but you shall include it if unavoidable(think names, language syntax like subscripting)
-as it affects Readability
+as it affects Readability.
+
+`|` delimiter signifies a new line in a single line.
+`--` marks some code with a note this shall be at the end of a line if `|` delimiter is used. 
 
 ### example (Comment token is `#` in python):
 ```py
