@@ -143,7 +143,7 @@ Intent Acronyms:
 Status Acronyms:
 ====================================
     "den" | denied
-    "abn" | "dea abandoned for now
+    "abn" | idea abandoned for now
     "acc" | Accepted
 ========================================
  = Comment Format used <https://github.com/TEEN-BOOM/Comments-Format/README.md>
