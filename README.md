@@ -23,12 +23,7 @@ There may not be another square bracket in the commment, but you shall include i
 as it affects Readability.
 
 `|` delimiter signifies a new line in a single line.
-`--` marks some code with a note this shall be at the end of a line if `|` delimiter is used. 
-
-### example (Comment token is `#` in python):
-```py
-# [This a Comment but it is basic.]
-```
+`--` marks some code with a note this shall be at the end of a line if `|` delimiter is used.
 
 ### Multiple Inline Comments
 All comment tokens should be in the same column, and text characters shall be aligned in the same column.
