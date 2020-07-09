@@ -40,6 +40,17 @@ class VeryGood:
                                     #  semicolon to comment the line below.
                                     #  This holds the string UMMM.]
 ```
+### Code Markers
+`--` is a Marker.
+
+### example
+```py
+class VeryGood:
+    def __init__(self, Goodness: int):
+        self.goodness = Goodness
+        self.foo = "bar"
+        self.unexplainable = "UMMM" # --|TO REMOVE|
+```
 
 ### Block Comments
 Multiple inline comments shall be preferred but it depends on the language.
