@@ -109,21 +109,26 @@ Permission is signified by `?`
 You must specify custom intents, signs, and acronyms in a `comments.format` in the following manner, located in the the root.
 You may change the Url if you are using a custom format
 ```
-Format = "INTENT:status: [Text]"
-Typing = ["_Type<SubType>_", "ReStructuredText"]
-AllowedText = ["utf-8", "ReStructuredText", "markdown"]
-IntentAcronyms = {
-    "FUT": "The future goals",
-    "ADD": "To ADD"
-}
-StatusAcronyms = {
-    "den": "denied",
-    "abn": "Idea abandoned for now"
-    "acc": "Accepted"
-}
-======================================================
-Comment Format used <https://github.com/TEEN-BOOM/Comments-Format/README.md>
-======================================================
+==============================
+Format      | "INTENT:status: [Text]"
+Typing      | "_Type<SubType>_" & ReStructuredText
+AllowedText | "utf-8" & ReStructuredText & markdown
+==============================
+
+IntentAcronyms:
+==============================
+    "FUT" | "The future goals"
+    "ADD" | "To ADD"
+==============================
+
+StatusAcronyms:
+====================================
+    "den" | "denied",
+    "abn" | "Idea abandoned for now"
+    "acc" | "Accepted"
+========================================
+ = Comment Format used <https://github.com/TEEN-BOOM/Comments-Format/README.md>
+========================================
 Any Notes regarding commenting.
 ```
 *You may leave the last line blank if you dont have any notes*
