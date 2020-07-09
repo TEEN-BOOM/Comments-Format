@@ -115,6 +115,11 @@ Typing      | "_Type<SubType>_" & ReStructuredText
 AllowedText | "utf-8" & ReStructuredText & markdown
 ==============================
 
+Signs:
+==============================
+    "*" | important
+==============================
+
 IntentAcronyms:
 ==============================
     "FUT" | The future goals
