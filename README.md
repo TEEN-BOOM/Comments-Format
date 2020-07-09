@@ -84,9 +84,9 @@ A comment can be marked by writing in lowercase between the two colon's. The mar
 # REQ:accepted:TODO:medium: [Implement __enter__ and __exit__]
 ```
 ### Type hinting in comments
-the type as it is in the language surrounded by single underscores. i.e `str` becomes `_str_` & `null` -> `_null_`.
+The type as it is in the language surrounded by single underscores. i.e `str` becomes `_str_` & `null` -> `_null_`.
 Some of the types that can be used are `_func_`, `_var_`, `_list<str>_`(list of strings), `_func<func, list>_` (a function which takes the following parameters)
-It's best not to type hint too much and use basic type hinting like so.
+Do not to type hint too much and use basic type hinting like so. Though it's best to type hint in the code if possible.
 ```py
 # REQ:: [Add _func<int>_(IntToString) I do not know how to implement it]
 .
@@ -95,4 +95,13 @@ It's best not to type hint too much and use basic type hinting like so.
 # TODO:: [Remove VeryGood._attr_(foo)] | REASON:: [It's BAR]
 # TODO:: [Add VeryGood._meth_(bar) returning "bar"]
 # TODO:: [Add :meth:`foo` returning "FoO"]
+```
+### Importance and Permission
+Importance is signified by `!`
+```py
+# !!TODO:: [Patch ValueError on SOmethi...]
+```
+Permission is signified by `?`
+```py
+# ?TODO:granted: [Remove :func:`foo`]
 ```
