@@ -1,13 +1,24 @@
-Format = "INTENT:status: [Text]"
-Typing = ["_Type<SubType>_", "ReStructuredText"]
-AllowedText = ["utf-8", "ReStructuredText", "markdown"]
-IntentAcronyms = {
-}
-StatusAcronyms = {
-    "den": "denied",
-    "abn": "Idea abandoned for now"
-    "acc": "Accepted"
-}
-======================================================
-Comment Format used <https://github.com/TEEN-BOOM/Comments-Format/README.md>
-======================================================
+==============================
+Format      | INTENT:status: [Text]
+Typing      | "_Type<SubType>_" & ReStructuredText
+AllowedText | "utf-8" & ReStructuredText & markdown
+==============================
+
+Signs:
+==============================
+    None
+==============================
+
+Intent Acronyms:
+==============================
+    None
+==============================
+
+Status Acronyms:
+====================================
+    "den" | denied
+    "abn" | "dea abandoned for now
+    "acc" | Accepted
+========================================
+ = Comment Format used <https://github.com/TEEN-BOOM/Comments-Format/README.md>
+========================================
