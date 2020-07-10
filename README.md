@@ -115,6 +115,22 @@ Permission is signified by `?`
 ```py
 # ?TODO:granted: [Remove :func:`foo`]
 ```
+### Specifying the Author
+Comments needn't specify the author and preferably shall be anonymous(though not completly, as in modifying the git history).
+It is assumed that a comment's author can be found from the git commit history, there also are extension such as gitlens to supplement this.
+nonetheless the author is specified by an `@` outside the bracket block, surrounded by `<>`.
+```py
+# @TEEN-BOOM:TODO:: [Do Stuff]
+```
+```py
+# TODO:: [Do Stuff]<@TEEN-BOOM>
+```
+```py
+# TODO:: [stuff]<@TEEN-BOOM, @SOMEONE>
+```
+```py
+# @TEEN-BOOM, @SOMEONE:TODO:: [stuff]
+```
 ### Custom Intents, signs(i.e `!` and `?`) and acronyms or Format
 You must specify custom intents, signs, and acronyms in a `comments.format` in the following manner, located in the the root.
 You may change the Url if you are using a custom format
