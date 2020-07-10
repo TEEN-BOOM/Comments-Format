@@ -129,14 +129,14 @@ nonetheless the author is specified by an `@` outside the bracket block, surroun
 # TODO:: [stuff]<@TEEN-BOOM, @SOMEONE>
 ```
 ```py
-# @TEEN-BOOM, @SOMEONE:TODO:: [stuff]
+# @TEEN-BOOM, @SOMEONE:!!TODO:: [stuff]
 ```
 ### Custom Intents, signs(i.e `!` and `?`) and acronyms or Format
 You must specify custom intents, signs, and acronyms in a `comments.format` in the following manner, located in the the root.
 You may change the Url if you are using a custom format
 ```
 ==============================
-Format      | @Author(s):INTENT:status: [Text]<@Author(s)>
+Format      | @Author(s):|signs|INTENT:status: [Text]<@Author(s)>
 Typing      | "_Type<SubType>_" & ReStructuredText
 AllowedText | "utf-8" & ReStructuredText & markdown
 ==============================
