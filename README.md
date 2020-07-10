@@ -136,7 +136,7 @@ You must specify custom intents, signs, and acronyms in a `comments.format` in t
 You may change the Url if you are using a custom format
 ```
 ==============================
-Format      | INTENT:status: [Text]
+Format      | @Author(s):INTENT:status: [Text]<@Author(s)>
 Typing      | "_Type<SubType>_" & ReStructuredText
 AllowedText | "utf-8" & ReStructuredText & markdown
 ==============================
