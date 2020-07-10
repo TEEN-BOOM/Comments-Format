@@ -1,5 +1,5 @@
 ==============================
-Format      | INTENT:status: [Text]
+Format      | @Author(s):|signs|INTENT:status: [Text]<@Author(s)>
 Typing      | "_Type<SubType>_" & ReStructuredText
 AllowedText | "utf-8" & ReStructuredText & markdown
 ==============================
