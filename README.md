@@ -28,6 +28,7 @@ as it affects Readability.
 ### Multiple Inline Comments
 All comment tokens should be in the same column, and text characters shall be aligned in the same column.
 You can End the previous line with a semicolon to comment the line below.
+
 ### example (Python)
 ```py
 class VeryGood:
@@ -83,6 +84,50 @@ The Text shall be aligned accordingly.
 ```
 ```py
 # REQ:: [Can we use an deque instead?]
+```
+### Writing mathematical Equations
+```py
+# Array_Size:: [ 
+#     {[(32*4)*(DiemensionY + 1) + 16*DiemensionX*DiemensionY]} bits 
+# ]
+```
+The above form is valid, when writing only an equation without `Text`.
+It can be read as `Array_Size = {...} bits`. The square brackets shall not be on the same line if the equation uses brackets. This is to preserve readability.
+The forms below are also valid.
+```py
+# Array_Size:: [ {[(32*4)*(DiemensionY + 1) + 16*DiemensionX*DiemensionY]} ]
+```
+```py
+# Array_Size:: [
+#     {[(32*4)*(DiemensionY + 1) + 16*DiemensionX*DiemensionY]} ]
+```
+```py
+# Array_Size:: [
+#     {[(32*4)*(DiemensionY + 1) + 16*DiemensionX*DiemensionY]} bits]
+```
+**To add an equation in a block** we may indent the equation with 4 spaces
+```py
+# DESC:: [
+#     This function computes the foo with bar given that bar is a _func_,
+#     it's implementation is complex and very slow. I hate it, but i have-
+#     no choice. foo must be a _list_ where::
+#           :: Array_Size = {[(32*4)*(DiemensionY + 1) + 16*DiemensionX*DiemensionY]} bits
+#     I have no idea why but it must or we raise ValueError, to make life- 
+#     hell for other Devs...
+# ]
+```
+OR
+```py
+# DESC:: [
+#     This function computes the foo with bar given that bar is a _func_,
+#     it's implementation is complex and very slow. I hate it, but i have-
+#     no choice. foo must be a _list_ where::
+#     
+#         :: Array_Size = {[(32*4)*(DiemensionY + 1) + 16*DiemensionX*DiemensionY]} bits
+#
+#     I have no idea why but it must or we raise ValueError, to make life- 
+#     hell for other Devs...
+# ]
 ```
 ### Specifying Staus or Marking an Comment
 A comment can be marked by writing in lowercase between the two colon's. The marker's length shall be preferably less than 16 characters long.
