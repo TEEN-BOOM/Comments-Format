@@ -9,6 +9,7 @@ An informal format for comments.
 
 ## Basic format
 
+Comments which are  *standard* in a language, (i.e shebang line) Do not follow this format. 
 All text of the comment is to be wrapped in square brackets `[]`,
 and must have a space after the comment token.
 
@@ -66,7 +67,7 @@ this doesn't refer to the comment token or square bracket, etc.
 *note: the asterisk between lines is not necessary it is used to show how to align the text*
 
 ## Communicating Intent
-TODO, DESC (description), REASON, REQ can be used to specify the *type* of the comment, these *types* should strictly be typed in capital letters.
+TODO, DESC (description), REASON, REQ, NOTE can be used to specify the *type* of the comment, these *types* should strictly be typed in capital letters.
 The types are succeeded by a `::` double colon token followed by a space.
 The Text shall be aligned accordingly.
 **Multiple intents** shall be seperated with `|` delimiter.
@@ -84,6 +85,9 @@ The Text shall be aligned accordingly.
 ```
 ```py
 # REQ:: [Can we use an deque instead?]
+```
+```py
+# NOTE:: [** Operator calls _func_(pow) in cython, so use (x * X)]
 ```
 ### Writing mathematical Equations
 ```py
