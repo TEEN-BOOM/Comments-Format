@@ -7,7 +7,7 @@ An informal format for comments.
 # !TODO:inImplentation: [Make _list_(Connection) a _deque_ and change _meth_(pop) to :meth:`popleft`]
 ```
 
-## Basic format
+## Basic format/Quick Comments
 
 Comments which are  *standard* in a language, (i.e shebang line) Do not follow this format. 
 All text of the comment is to be wrapped in square brackets `[]`,
