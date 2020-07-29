@@ -60,9 +60,9 @@ this doesn't refer to the comment token or square bracket, etc.
 ### example (Block comments start with `/*` in C (C99), C++, Go, Swift and JavaScript)
 ```C
 /* [This is a Long Comment, it is long, veryy long.
-*   Please align it like this, The block comment doesn't
-*   refer to Docstring in python.]
-*/
+ *  Please align it like this, The block comment doesn't
+ *  refer to Docstring in python.]
+ */
 ```
 *note: the asterisk between lines is not necessary it is used to show how to align the text*
 
