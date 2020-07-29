@@ -67,7 +67,7 @@ this doesn't refer to the comment token or square bracket, etc.
 *note: the asterisk between lines is not necessary it is used to show how to align the text*
 
 ## Communicating Intent
-TODO, DESC (description), REASON, REQ, NOTE can be used to specify the *type* of the comment, these *types* should strictly be typed in capital letters.
+TODO, DESC (description), REASON, REQ, NOTE can be used to specify the *type(intent)* of the comment, these *types(intents)* should strictly be in capital letters.
 The types are succeeded by a `::` double colon token followed by a space.
 The Text shall be aligned accordingly.
 **Multiple intents** shall be seperated with `|` delimiter.
