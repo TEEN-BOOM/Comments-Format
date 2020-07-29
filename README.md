@@ -156,7 +156,7 @@ Though it's best to type hint in the code if possible.
 # TODO:: [Add :meth:`foo` returning "FoO"]
 ```
 ### Importance and Permission
-Importance is signified by `!` the more exclamtion signs the more urgent.
+Importance is signified by `!` the more exclamation marks the more urgent.
 ```py
 # !!TODO:: [Patch ValueError on SOmethi...]
 ```
