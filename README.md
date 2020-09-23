@@ -145,7 +145,8 @@ A comment can be marked by writing in lowercase between the two colon's. The mar
 The type as it is in the language surrounded by single underscores. i.e `str` becomes `_str_` & `null` -> `_null_`.
 Some of the types that can be used are `_func_`, `_var_`, `_list<str>_`(list of strings), `_func<func, list>_` (a function which takes the following parameters)
 Do not type hint too much and use basic type hinting like so: `_func_(add)`, `_var_(index)`, `_list_(connections)`.
-Though it's best to type hint in the code if possible.
+You may also use restructured text to hint types like ``` :meth:`append` ```
+**Though it's best to type hint in the code if possible.**
 ```py
 # REQ:: [Add _func<int>_(IntToString) I do not know how to implement it]
 .
