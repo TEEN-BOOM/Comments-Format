@@ -161,9 +161,9 @@ Importance is signified by `!` the more exclamation marks the more urgent.
 ```py
 # !!TODO:: [Patch ValueError on SOmethi...]
 ```
-Permission is signified by `?`
+Possibilty is signified by `?`
 ```py
-# ?TODO:granted: [Remove :func:`foo`]
+# ?TODO:: [Maybe remove :func:`foo`]
 ```
 ### Specifying the Author
 Comments needn't specify the author and preferably shall be anonymous(though not completly, as in modifying the git history).
