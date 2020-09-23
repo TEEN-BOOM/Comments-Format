@@ -166,7 +166,7 @@ Possibilty is signified by `?`
 # ?TODO:: [Maybe remove :func:`foo`]
 ```
 ### Specifying the Author
-Comments needn't specify the author and preferably shall be anonymous(though not completly, as in modifying the git history).
+**Comments needn't specify the author and preferably shall be anonymous(though not completly, as in modifying the git history).**
 It is assumed that a comment's author can be found from the git commit history, there also are extension such as gitlens to supplement this.
 nonetheless the author is specified by an `@` outside the bracket block, surrounded by `<>`.
 ```py
